@@ -10,8 +10,7 @@
 docker pull redis:6.0.9-alpine3.12
 docker tag redis:6.0.9-alpine3.12 myredis
 docker run --name myredis -d myredis
-docker exec -it myredis sh
-redis-cli
+docker exec -it myredis redis-cli
 ```
 
 Run the Redis image with persisting the data to /data in the container
