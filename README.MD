@@ -24,3 +24,14 @@ Run the Redis image with persisting the data to /data in the container and stori
 ```
 docker run --name myredis -v data:/data -d myredis redis-server --appendonly yes
 ```
+
+Latest Redis  
+
+```
+docker run -d --cap-add sys_resource --name rp -p 8443:8443 -p 9443:9443 -p 12000:12000 redislabs/redis
+```
+
+Account:
+Martinus Cookienus cookie57@centrum.cz C2.
+
+https://docs.redislabs.com/latest/rs/getting-started/getting-started-docker/
